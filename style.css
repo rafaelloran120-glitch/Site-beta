@@ -1,38 +1,37 @@
+/* Fundo geral mais escuro */
 body {
   margin: 0;
   padding: 0;
   font-family: "Georgia", serif;
-  background: radial-gradient(circle at top, #fff4f8, #f8dfe7, #ffffff);
+  background: linear-gradient(180deg, #7a254f, #a03b6d, #f8dfe7);
 }
 
-/* Cartão principal */
+/* Cartão continua claro (contraste) */
 section {
   max-width: 680px;
   margin: 60px auto;
   padding: 35px;
-  background: linear-gradient(180deg, #ffffff, #fff6fa);
+  background: linear-gradient(180deg, #ffffff, #fff2f7);
   border-radius: 26px;
-  box-shadow: 0 18px 40px rgba(139, 47, 95, 0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
-/* H1 — impacto suave */
+/* Títulos mais claros pro fundo escuro */
 h1 {
-  color: #7a254f;
-  font-size: 2.3em;
+  color: #fff0f5;
+  font-size: 2.4em;
   text-align: center;
   margin-bottom: 20px;
-  letter-spacing: 0.5px;
 }
 
-/* H2 — delicado */
 h2 {
-  color: #b23a6a;
+  color: #ffd1e3;
   font-size: 1.4em;
   text-align: center;
   margin-top: 50px;
 }
 
-/* Texto */
+/* Texto normal */
 p {
   font-size: 17px;
   line-height: 1.75;
@@ -41,26 +40,39 @@ p {
   margin: 20px 0;
 }
 
-/* Imagem */
+/* Pergunta sim / não */
+label {
+  background-color: #ffd1e3;
+  color: #7a254f;
+  padding: 8px 18px;
+  border-radius: 25px;
+  margin: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Radio */
+input[type="radio"] {
+  accent-color: #7a254f;
+  transform: scale(1.2);
+}
+
+/* Mensagem que aparece */
+#msg {
+  background-color: #ffe6f0;
+  padding: 14px 20px;
+  border-radius: 18px;
+  margin-top: 25px;
+  color: #7a254f;
+  box-shadow: 0 8px 20px rgba(122, 37, 79, 0.3);
+}
+
+/* Imagem continua bonita */
 img {
   display: block;
   margin: 30px auto;
   width: 240px;
   border-radius: 50%;
-  border: 7px solid #f3c9d8;
-  box-shadow: 0 12px 28px rgba(122, 37, 79, 0.25);
-}
-
-/* Radios */
-label {
-  font-size: 16px;
-  color: #6b2c4f;
-}
-
-/* Final */
-footer {
-  margin: 70px auto 30px;
-  text-align: center;
-  font-size: 0.9em;
-  color: #6a3f52;
+  border: 7px solid #ffd1e3;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
