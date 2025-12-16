@@ -1,52 +1,66 @@
 body {
-  background: linear-gradient(#fff0f5, #ffffff);
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(180deg, #fff0f5, #fdecef, #ffffff);
 }
 
+/* Caixa principal */
 section {
-  max-width: 680px;
-  margin: 40px auto;
-  padding: 25px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
   background-color: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
 
+/* Título principal */
 h1 {
-  color: #8b3a62;
-  font-size: 2.3em;
+  color: #8b2f5f;
+  font-size: 2.4em;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
+/* Subtítulos */
 h2 {
-  color: #b56576;
-  font-size: 1.4em;
+  color: #b44a73;
+  font-size: 1.5em;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
+/* Texto */
 p {
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #444;
   text-align: justify;
-  margin: 15px 0;
+  margin: 18px 0;
 }
 
+/* Imagem */
 img {
   display: block;
-  margin: 20px auto;
+  margin: 25px auto;
   width: 240px;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  border: 6px solid #fdecef;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
+/* Inputs (sim / não) */
+label {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #6b2c4f;
+}
+
+/* Mensagem final */
 footer {
+  margin: 60px auto 25px;
   text-align: center;
-  margin: 50px 0 20px;
   font-size: 0.9em;
   color: #7a4a63;
 }
