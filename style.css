@@ -11,9 +11,9 @@ section {
   max-width: 680px;
   margin: 60px auto;
   padding: 35px;
-  background: linear-gradient(180deg, #ffffff, #fff2f7);
+  background: linear-gradient(180deg, #7a254f, #6b1f44);
   border-radius: 26px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
 /* Título principal */
