@@ -50,36 +50,10 @@ section {
 section * {
   background-color: transparent;
 }
-h1 {
-  position: relative;
-  font-size: 3em;
-  font-weight: 800;
-  text-align: center;
-  padding: 28px 20px;
-  margin-bottom: 45px;
-  border-radius: 28px;
 
-  /* Caixa */
-  background: linear-gradient(
-    135deg,
-    rgba(255, 182, 213, 0.28),
-    rgba(255, 182, 213, 0.12)
-  );
-
-  /* Brilho e profundidade */
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.45),
-    inset 0 0 18px rgba(255, 230, 240, 0.25);
-
-  /* Texto */
-  color: #ffe6f0;
-  text-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.55),
-    0 0 22px rgba(255, 182, 213, 0.35);
-}
   
 /* TÍTULOS */
- h2 {
+h1, h2 {
   text-align: center;
   margin-bottom: 20px;
 }
