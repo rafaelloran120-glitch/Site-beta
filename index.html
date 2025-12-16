@@ -26,18 +26,24 @@
     meu coração já sabia.
   </p>
         </section>
-      <p>Você ja tomou banho hoje sebosinha?</p>
-      <label>
-        <input type="radio" name="banho">
-        Sim
-      </label>
-        <label>
-          <input type="radio" name="banho">
-          Não
-        </label>
-          <p><em>Se marcar "Sim"...mentira, você só toma banho sábado, tô brincando princesa te amo 🫶🏻🤍
-          </em></p>
+      <p>Você já tomou banho hoje?</p>
+
+<label>
+  <input type="radio" name="banho" onclick="mostrarMsg()"> Sim
+</label>
+<label>
+  <input type="radio" name="banho"> Não
+</label>
+
+<p id="msg" style="display:none;">
+  <em>Mentiraaaa, você só toma banho sábado kkkk,to brincando princesa eu te amo🫶🏻🤍</em>
+</p>
+
+<script>
+  function mostrarMsg() {
+    document.getElementById("msg").style.display = "block";
+  }
+</script>
       </body>
 </html>
-
         
