@@ -1,67 +1,68 @@
-/* FUNDO GERAL */
-body {
+/* RESET – REMOVE FUNDO BRANCO DE TUDO */
+* {
   margin: 0;
   padding: 0;
-  font-family: "Georgia", serif;
-  background: linear-gradient(180deg, #4a102a, #6b1f44, #8b2f5f);
-  color: #ffe6f0; /* COR ÚNICA DE TEXTO */
-  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: transparent;
 }
 
-/* DESENHOS ANIMADOS (bolhas/corações suaves) */
+/* FUNDO GERAL */
+html, body {
+  min-height: 100%;
+  font-family: "Georgia", serif;
+  background: linear-gradient(180deg, #3d0d22, #6b1f44, #8b2f5f);
+  color: #ffe6f0;
+}
+
+/* DESENHOS ANIMADOS (AGORA VISÍVEIS) */
 body::before,
 body::after {
   content: "";
   position: fixed;
-  width: 220px;
-  height: 220px;
-  background: rgba(255, 209, 227, 0.12);
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 182, 213, 0.18);
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
 }
 
 body::before {
-  top: -60px;
-  left: -60px;
+  top: -100px;
+  left: -100px;
 }
 
 body::after {
-  bottom: -80px;
-  right: -80px;
+  bottom: -120px;
+  right: -120px;
 }
 
 /* ÁREA PRINCIPAL */
 section {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
+  max-width: 720px;
   margin: 60px auto;
-  padding: 38px;
-  background: rgba(122, 37, 79, 0.55);
-  backdrop-filter: blur(6px);
-  border-radius: 28px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  padding: 40px;
+  background: rgba(122, 37, 79, 0.65);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* GARANTE QUE NADA INTERNO FIQUE BRANCO */
+section * {
+  background-color: transparent;
 }
 
 /* TÍTULOS */
-h1 {
+h1, h2 {
   text-align: center;
-  font-size: 2.4em;
   margin-bottom: 20px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 1.4em;
-  margin-top: 45px;
 }
 
 /* TEXTO */
 p {
   font-size: 17px;
   line-height: 1.8;
+  margin: 18px 0;
   text-align: justify;
-  margin: 20px 0;
 }
 
 /* IMAGEM */
@@ -70,31 +71,35 @@ img {
   margin: 30px auto;
   width: 240px;
   border-radius: 50%;
-  border: 6px solid rgba(255, 230, 240, 0.6);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  border: 6px solid rgba(255, 230, 240, 0.7);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6);
 }
 
 /* FRASE ROMÂNTICA */
 .amor {
-  background: rgba(255, 209, 227, 0.18);
-  padding: 14px 22px;
-  border-radius: 22px;
   text-align: center;
   font-size: 19px;
   font-weight: bold;
-  margin: 18px auto 0;
-  max-width: 360px;
+  padding: 14px 22px;
+  border-radius: 22px;
+  margin: 20px auto;
+  background: rgba(255, 182, 213, 0.25);
+}
+
+/* FORM / PERGUNTAS */
+form, div, fieldset {
+  background: transparent;
 }
 
 /* SIM / NÃO */
 label {
-  background: rgba(255, 209, 227, 0.22);
-  padding: 10px 22px;
-  border-radius: 30px;
-  margin: 10px;
   display: inline-block;
-  font-weight: bold;
+  margin: 10px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: rgba(255, 182, 213, 0.25);
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* RADIO */
@@ -105,10 +110,10 @@ input[type="radio"] {
 
 /* MENSAGEM */
 #msg {
-  background: rgba(255, 209, 227, 0.22);
+  margin-top: 25px;
   padding: 16px 22px;
   border-radius: 22px;
-  margin-top: 25px;
+  background: rgba(255, 182, 213, 0.25);
 }
 
 /* RODAPÉ */
