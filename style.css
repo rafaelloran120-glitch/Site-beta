@@ -1,19 +1,26 @@
 body {
-  background-color:black;
-  color:red;
+  background-color: #fff0f5;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
-h1,h2 {
-  text-align:center;
-  font-size:30px;
+
+h1, h2 {
+  color: #a64d79;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
 p {
-font-size:18px; 
-  text-align:justify;
-  line-height:1.5;
+  font-size: 18px; 
+  text-align: justify;
+  line-height: 1.5;
 }
-  ul {
-    list-style-type:square;
-    padding-left:20px;
-  }
-  li {
-    margin-buttom:5px;
-  }
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
