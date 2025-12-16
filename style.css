@@ -1,66 +1,66 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(180deg, #fff0f5, #fdecef, #ffffff);
+  font-family: "Georgia", serif;
+  background: radial-gradient(circle at top, #fff4f8, #f8dfe7, #ffffff);
 }
 
-/* Caixa principal */
+/* Cartão principal */
 section {
-  max-width: 700px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 22px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 35px;
+  background: linear-gradient(180deg, #ffffff, #fff6fa);
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(139, 47, 95, 0.15);
 }
 
-/* Título principal */
+/* H1 — impacto suave */
 h1 {
-  color: #8b2f5f;
-  font-size: 2.4em;
+  color: #7a254f;
+  font-size: 2.3em;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
-/* Subtítulos */
+/* H2 — delicado */
 h2 {
-  color: #b44a73;
-  font-size: 1.5em;
+  color: #b23a6a;
+  font-size: 1.4em;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 /* Texto */
 p {
   font-size: 17px;
-  line-height: 1.7;
-  color: #444;
+  line-height: 1.75;
+  color: #4a3b41;
   text-align: justify;
-  margin: 18px 0;
+  margin: 20px 0;
 }
 
 /* Imagem */
 img {
   display: block;
-  margin: 25px auto;
+  margin: 30px auto;
   width: 240px;
   border-radius: 50%;
-  border: 6px solid #fdecef;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  border: 7px solid #f3c9d8;
+  box-shadow: 0 12px 28px rgba(122, 37, 79, 0.25);
 }
 
-/* Inputs (sim / não) */
+/* Radios */
 label {
-  margin: 0 10px;
   font-size: 16px;
   color: #6b2c4f;
 }
 
-/* Mensagem final */
+/* Final */
 footer {
-  margin: 60px auto 25px;
+  margin: 70px auto 30px;
   text-align: center;
   font-size: 0.9em;
-  color: #7a4a63;
+  color: #6a3f52;
 }
