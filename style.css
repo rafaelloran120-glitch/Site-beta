@@ -3,39 +3,63 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Georgia", serif;
-  background: linear-gradient(180deg, #5a1536, #7a254f, #8b2f5f);
+  background: linear-gradient(180deg, #4a102a, #6b1f44, #8b2f5f);
+  color: #ffe6f0; /* COR ÚNICA DE TEXTO */
+  overflow-x: hidden;
+}
+
+/* DESENHOS ANIMADOS (bolhas/corações suaves) */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 209, 227, 0.12);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body::before {
+  top: -60px;
+  left: -60px;
+}
+
+body::after {
+  bottom: -80px;
+  right: -80px;
 }
 
 /* ÁREA PRINCIPAL */
 section {
-  max-width: 680px;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
   margin: 60px auto;
-  padding: 35px;
-  background: linear-gradient(180deg, #6b1f44, #5a1536);
-  border-radius: 26px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  padding: 38px;
+  background: rgba(122, 37, 79, 0.55);
+  backdrop-filter: blur(6px);
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
 }
 
 /* TÍTULOS */
 h1 {
-  color: #fff0f5;
-  font-size: 2.4em;
   text-align: center;
+  font-size: 2.4em;
   margin-bottom: 20px;
 }
 
 h2 {
-  color: #ffd1e3;
-  font-size: 1.4em;
   text-align: center;
+  font-size: 1.4em;
   margin-top: 45px;
 }
 
 /* TEXTO */
 p {
   font-size: 17px;
-  line-height: 1.75;
-  color: #ffe6f0;
+  line-height: 1.8;
   text-align: justify;
   margin: 20px 0;
 }
@@ -46,55 +70,51 @@ img {
   margin: 30px auto;
   width: 240px;
   border-radius: 50%;
-  border: 7px solid #ffd1e3;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5);
+  border: 6px solid rgba(255, 230, 240, 0.6);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
 }
 
-/* FRASE EU TE AMO */
+/* FRASE ROMÂNTICA */
 .amor {
-  background-color: #8b2f5f;
-  color: #fff0f5;
+  background: rgba(255, 209, 227, 0.18);
   padding: 14px 22px;
   border-radius: 22px;
   text-align: center;
   font-size: 19px;
   font-weight: bold;
   margin: 18px auto 0;
-  max-width: 340px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  max-width: 360px;
 }
 
 /* SIM / NÃO */
 label {
-  background-color: #8b2f5f;
-  color: #fff0f5;
-  padding: 10px 20px;
+  background: rgba(255, 209, 227, 0.22);
+  padding: 10px 22px;
   border-radius: 30px;
   margin: 10px;
   display: inline-block;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* RADIO */
 input[type="radio"] {
-  accent-color: #ffd1e3;
+  accent-color: #ffe6f0;
   transform: scale(1.2);
 }
 
 /* MENSAGEM */
 #msg {
-  background-color: #7a254f;
-  padding: 14px 20px;
-  border-radius: 20px;
+  background: rgba(255, 209, 227, 0.22);
+  padding: 16px 22px;
+  border-radius: 22px;
   margin-top: 25px;
-  color: #fff0f5;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* RODAPÉ */
 footer {
-  margin: 70px auto 30px;
   text-align: center;
   font-size: 0.9em;
-  color: #ffd1e3;
+  margin: 60px 0 30px;
+  opacity: 0.85;
 }
