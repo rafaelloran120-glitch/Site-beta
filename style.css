@@ -150,11 +150,3 @@ footer {
   margin: 60px 0 30px;
   opacity: 0.85;
 }
-section h1::after {
-  content: "──────── ♡ ────────";
-  display: block;
-  margin-top: 14px;
-  font-size: 0.45em;
-  letter-spacing: 3px;
-  opacity: 0.75;
-}
